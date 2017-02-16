@@ -34,3 +34,10 @@ For more information on the syntax of the command run `CALL dbms.procedures` to 
 
     CALL dbms.procedures() YIELD name, signature, description WHERE name STARTS WITH 'path' RETURN *
 
+## Can this be done in Cypher?
+
+The simple `path.stats(5)` call above can be done in Cypher:
+
+    MATCH p=(a)-[*0..5]->(b) RETURN length(p) as length, count(p) as value
+
+_Note: The current implementation of the procedure does not handle self relationships, and so if those exist, then the procedure will give different results to Cypher._
