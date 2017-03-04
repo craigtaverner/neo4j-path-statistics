@@ -10,6 +10,7 @@
   <description>An example kernel extension and procedures that use the extension</description>
 
   <properties>
+   	 <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <neo4j.version>3.1.1</neo4j.version>
   </properties>
 
