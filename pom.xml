@@ -38,6 +38,11 @@
 
   <dependencies>
     <dependency>
+      <groupId>tue.we.li</groupId>
+      <artifactId>path_selectivity</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
       <groupId>org.neo4j</groupId>
       <artifactId>neo4j</artifactId>
       <version>${neo4j.version}</version>
